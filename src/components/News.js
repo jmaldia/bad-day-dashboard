@@ -6,7 +6,8 @@ const News = (props) => {
         {headline: 'RIP George H W Bush', preview: 'This is the preview for your second news item'},
         {headline: 'It\'s Sunny in California', preview: 'This is the preview for your third news item'},
         {headline: 'Lakers sweep the Bulls', preview: 'This is the preview for your fourth news item'}
-    ]
+    ];
+
     return (
         
                 <div style={styles} className="News">
