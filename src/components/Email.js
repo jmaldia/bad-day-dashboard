@@ -10,12 +10,13 @@ const Email = (props) => {
     return (
         
                 <div style={styles} className="Email">
+                    <h3>Emails</h3>
                     {
                         emails.map((email) => {
                             return (
                                 <div>
                                     <img src='#' alt='Contact'></img>
-                                    <h3>{email.subject}</h3>
+                                    <h4>{email.subject}</h4>
                                     <p>{email.preview}</p>
                                 </div>
                             )

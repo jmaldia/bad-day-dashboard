@@ -10,14 +10,14 @@ const News = (props) => {
 
     return (
         
-                <div style={styles} className="News">
-                    <h2>News for you</h2>
+                <div style={styles.container} className="News">
+                    <h3>News for you</h3>
                     {
                         news.map((item) => {
                             return (
                                 <div>
                                     <img src='#' alt='Contact'></img>
-                                    <h3>{item.headline}</h3>
+                                    <h4>{item.headline}</h4>
                                     <p>{item.preview}</p>
                                 </div>
                             )
@@ -28,7 +28,17 @@ const News = (props) => {
 };
 
 const styles = {
-    
+    container: {
+        width: 600,
+        padding: 20,
+        margin: 40,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        borderRadius: 5,
+        borderStyle: 'solid',
+        borderColor: '#000',
+        borderWidth: 1
+    }
 };
 
 export default News;
