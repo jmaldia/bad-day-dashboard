@@ -9,7 +9,7 @@ const Email = (props) => {
     ]
     return (
         
-                <div style={styles} className="Email">
+                <div style={styles.container} className="Email">
                     <h3>Emails</h3>
                     {
                         emails.map((email) => {
@@ -27,7 +27,17 @@ const Email = (props) => {
 };
 
 const styles = {
-    
+    container: {
+        width: 600,
+        padding: 20,
+        margin: 40,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        borderRadius: 5,
+        borderStyle: 'solid',
+        borderColor: '#000',
+        borderWidth: 1
+    }
 };
 
 export default Email;
