@@ -12,9 +12,9 @@ const Email = (props) => {
                 <div style={styles.container} className="Email">
                     <h3>Emails</h3>
                     {
-                        emails.map((email) => {
+                        emails.map((email, index) => {
                             return (
-                                <div>
+                                <div key={index}>
                                     <img src='#' alt='Contact'></img>
                                     <h4>{email.subject}</h4>
                                     <p>{email.preview}</p>

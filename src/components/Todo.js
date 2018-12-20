@@ -1,5 +1,5 @@
 import React from 'react'
-import { SSL_OP_SINGLE_DH_USE } from 'constants';
+// import { SSL_OP_SINGLE_DH_USE } from 'constants';
 
 const TextDecodeOptions = (props) => {
     const todos = [
@@ -13,9 +13,9 @@ const TextDecodeOptions = (props) => {
         <div style={styles.container}>
             <h3>Your Todos</h3>
             {
-                todos.map((todo) => {
+                todos.map((todo, index) => {
                     return (
-                        <div>
+                        <div key={index}>
                             <img src='#' alt='Contact'></img>
                             <h4>{todo.title}</h4>
                         </div>

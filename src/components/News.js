@@ -13,9 +13,9 @@ const News = (props) => {
                 <div style={styles.container} className="News">
                     <h3>News for you</h3>
                     {
-                        news.map((item) => {
+                        news.map((item, index) => {
                             return (
-                                <div>
+                                <div key={index}>
                                     <img src='#' alt='Contact'></img>
                                     <h4>{item.headline}</h4>
                                     <p>{item.preview}</p>
