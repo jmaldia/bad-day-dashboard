@@ -8,7 +8,9 @@ import Weather from './components/Weather';
 
 import './App.css';
 
+import newsApi from './apis/newsApi';
 
+console.log(newsApi.news);
 
 class App extends Component {
   constructor(props) {
