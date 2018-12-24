@@ -8,9 +8,13 @@ import Weather from './components/Weather';
 
 import './App.css';
 
-import newsApi from './apis/newsApi';
-import toDoApi from './apis/toDoApi';
+import * as newsApi from './apis/newsApi';
+import * as toDoApi from './apis/toDoApi';
 
+toDoApi.getAllTodos()
+  .then(todos => {
+    console.log(todos)
+  });
 class App extends Component {
   constructor(props) {
     super(props);
