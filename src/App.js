@@ -11,16 +11,27 @@ import './App.css';
 import * as newsApi from './apis/newsApi';
 import * as toDoApi from './apis/toDoApi';
 
-toDoApi.getAllTodos()
-  .then(todos => {
-    console.log(todos)
-  });
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      temp: ''
     };
+  }
+
+  componentDidMount() {
+    toDoApi.getAllTodos()
+      .then(todos => {
+        this.setState({
+          temp: todos[0].content
+        })
+        console.log(todos);
+      });
+    
+    newsApi.getNews()
+      .then(news => {
+        console.log(news)
+      }); 
   }
 
   render() {
@@ -29,7 +40,7 @@ class App extends Component {
         <Calendar />
         <Email />
         <News />
-        <Todo />
+        <Todo todo={this.state.temp} />
         <Weather />
       </div>
     );

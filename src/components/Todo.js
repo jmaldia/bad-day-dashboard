@@ -18,6 +18,7 @@ const TextDecodeOptions = (props) => {
                         <div key={index}>
                             <img src='#' alt='Contact'></img>
                             <h4>{todo.title}</h4>
+                            <p><a href={props.todo}>My Todo</a></p>
                         </div>
                     )
                 })
