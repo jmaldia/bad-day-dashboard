@@ -15,7 +15,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      temp: ''
+      todos: ''
     };
   }
 
@@ -23,24 +23,26 @@ class App extends Component {
     toDoApi.getAllTodos()
       .then(todos => {
         this.setState({
-          temp: todos[0].content
+          todos
         })
-        console.log(todos);
+        // console.log(todos);
       });
     
     newsApi.getNews()
       .then(news => {
-        console.log(news)
+        // console.log(news)
       }); 
   }
 
   render() {
+
+    console.log(this.state.todos)
     return (
       <div className="App">
         <Calendar />
         <Email />
         <News />
-        <Todo todo={this.state.temp} />
+        <Todo todos={this.state.todos} />
         <Weather />
       </div>
     );
