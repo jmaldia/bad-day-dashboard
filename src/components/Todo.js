@@ -8,9 +8,9 @@ const Todo = (props) => {
     //     {title: 'Pack'},
     //     {title: 'Lunch'}
     // ];
-    console.log(props.todo)
+    // console.log(props.todo)
     
-    if (!props.todo){
+    if (!props.todos){
         return (
             <div style={styles.container}>
                 <h3>Your Todos</h3>
@@ -23,7 +23,7 @@ const Todo = (props) => {
                 <h3>Your Todos</h3>
                 {
                     props.todos.map((todo, index) => {
-                        if (index < 6) {
+                        if (todo.project_id === 127165112) {
                             return (
                                 <div key={index}>
                                     <img src='#' alt='Contact'></img>
