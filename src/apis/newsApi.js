@@ -1,19 +1,13 @@
 import { keys } from '../utils/config';
 
-let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${keys[1].newsApiKey}`;
-let req = new Request(url);
+const NewsAPI = require('newsapi');
+const newsapi = new NewsAPI(`${keys[1].newsApiKey}`);
 
-// export const newsApi = () => {
-//     let news = fetch(req)
-//         .then(function(response) {
-//             return response.json();
-//         });
+// let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${keys[1].newsApiKey}`;
+// let req = new Request(url);
 
-//         console.log(news)
-//     return news;
-// }
-
-export const getNews = () => fetch(req)
-        .then(function(response) {
-            return response;
-        });
+export const getNews = () => 
+    newsapi.v2.topHeadlines({
+        language: 'en',
+        country: 'us'
+    }).then(response => response.articles);

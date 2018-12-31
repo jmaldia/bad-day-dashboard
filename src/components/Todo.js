@@ -23,7 +23,7 @@ const Todo = (props) => {
                 <h3>Your Todos</h3>
                 {
                     props.todos.map((todo, index) => {
-                        if (todo.project_id === 127165112) {
+                        if (index < 5) {
                             return (
                                 <div key={index}>
                                     <img src='#' alt='Contact'></img>
