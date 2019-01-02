@@ -10,6 +10,7 @@ import './App.css';
 
 import * as newsApi from './apis/newsApi';
 import * as toDoApi from './apis/toDoApi';
+import * as weatherApi from './apis/toDoApi';
 
 class App extends Component {
   constructor(props) {
@@ -31,11 +32,13 @@ class App extends Component {
     
     newsApi.getNews()
       .then(news => {
-        console.log(news)
         this.setState({
           news
         });
       }); 
+
+    weatherApi.getAllTemp()
+      .then(temp => temp);
   }
 
   render() {
