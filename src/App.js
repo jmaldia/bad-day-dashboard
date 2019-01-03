@@ -10,7 +10,7 @@ import './App.css';
 
 import * as newsApi from './apis/newsApi';
 import * as toDoApi from './apis/toDoApi';
-import * as weatherApi from './apis/toDoApi';
+import * as weatherApi from './apis/weatherApi';
 
 class App extends Component {
   constructor(props) {
@@ -37,8 +37,7 @@ class App extends Component {
         });
       }); 
 
-    weatherApi.getAllTemp()
-      .then(temp => temp);
+    weatherApi.getAllTemp();
   }
 
   render() {
