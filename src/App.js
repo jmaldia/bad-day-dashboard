@@ -17,7 +17,8 @@ class App extends Component {
     super(props);
     this.state = {
       todos: '',
-      news: []
+      news: [],
+      temp: 0
     };
   }
 
@@ -37,17 +38,21 @@ class App extends Component {
         });
       }); 
 
-    weatherApi.getAllTemp();
+      console.log(weatherApi.getAllTemp())
+      this.setState({
+        temp: weatherApi.getAllTemp()
+      });
   }
 
   render() {
+    console.log(this.state.temp)
     return (
       <div className="App">
         <Calendar />
         <Email />
         <News news={this.state.news} />
         <Todo todos={this.state.todos} />
-        <Weather />
+        <Weather temp={this.state.temp}/>
       </div>
     );
   }

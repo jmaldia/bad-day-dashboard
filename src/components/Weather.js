@@ -5,7 +5,7 @@ const Weather
     return (
         <div style={styles.container}>
             <h3>Weather</h3>
-            <h4>35 degrees</h4>
+            <h4>It's {props.temp} degrees</h4>
             <div className="Weather-forecast">
             </div>
         </div>
