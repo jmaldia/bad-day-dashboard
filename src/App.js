@@ -38,9 +38,12 @@ class App extends Component {
         });
       }); 
 
-      console.log(weatherApi.getAllTemp())
-      this.setState({
-        temp: weatherApi.getAllTemp()
+      weatherApi.weather.getAllWeather((err, temp) => {
+          // if (err) {
+          //     return "Can't get temperature";
+          // }
+          console.log(temp);
+          this.setState({ temp: temp.main.temp });
       });
   }
 
