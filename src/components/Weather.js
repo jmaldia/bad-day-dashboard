@@ -5,7 +5,9 @@ const Weather
     return (
         <div style={styles.container}>
             <h3>Weather</h3>
-            <h4>It's {props.temp} degrees</h4>
+            <h4>It's {props.temp.temp} degrees right now</h4>
+            <p>Today's high is {props.temp.temp_max} degrees</p>
+            <p>Today's low is {props.temp.temp_min} degrees</p>
             <div className="Weather-forecast">
             </div>
         </div>

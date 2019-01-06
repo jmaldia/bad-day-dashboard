@@ -18,7 +18,7 @@ class App extends Component {
     this.state = {
       todos: '',
       news: [],
-      temp: 0
+      temp: []
     };
   }
 
@@ -43,7 +43,7 @@ class App extends Component {
           //     return "Can't get temperature";
           // }
           console.log(temp);
-          this.setState({ temp: temp.main.temp });
+          this.setState({ temp: temp.main });
       });
   }
 
