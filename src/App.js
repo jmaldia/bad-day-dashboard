@@ -48,14 +48,14 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.todos)
+    console.log(this.state.news);
     return (
       <div className="App">
-        <Calendar />
-        <Email />
+        <Weather temp={this.state.temp}/>
         <News news={this.state.news} />
         <Todo todos={this.state.todos} />
-        <Weather temp={this.state.temp}/>
+        <Calendar />
+        <Email />
       </div>
     );
   }

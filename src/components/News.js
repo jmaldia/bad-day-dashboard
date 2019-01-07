@@ -1,19 +1,12 @@
 import React from 'react'
 
 const News = (props) => {
-    // const news = [
-    //     {headline: 'Trump vs Mueller', preview: 'This is the preview for your first news item'},
-    //     {headline: 'RIP George H W Bush', preview: 'This is the preview for your second news item'},
-    //     {headline: 'It\'s Sunny in California', preview: 'This is the preview for your third news item'},
-    //     {headline: 'Lakers sweep the Bulls', preview: 'This is the preview for your fourth news item'}
-    // ];
-
     return (
         
                 <div style={styles.container} className="News">
                     <h3>News for you</h3>
                     {
-                        props.news.map((article, index) => {
+                        props.news.filter((article, index) => index < 5).map((article, index) => {
                             return (
                                 <div key={index}>
                                     <img src='#' alt='Contact'></img>
