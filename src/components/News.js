@@ -9,8 +9,8 @@ const News = (props) => {
                         props.news.filter((article, index) => index < 5).map((article, index) => {
                             return (
                                 <div key={index}>
-                                    <img src='#' alt='Contact'></img>
-                                    <h4>{article.title}</h4>
+                                    <img src={article.urlToImage} alt='Contact' width="300"></img>
+                                    <a href={article.url} target="_blank" rel="noopener noreferrer"><h4>{article.title}</h4></a>
                                     <p>{article.description}</p>
                                 </div>
                             )
