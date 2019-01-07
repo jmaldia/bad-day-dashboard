@@ -22,13 +22,11 @@ const Todo = (props) => {
             <div style={styles.container}>
                 <h3>Your Todos</h3>
                 {
-                    props.todos.map((todo, index) => {
+                    props.todos.filter(todo => todo.due).map((todo, index) => {
                         if (index < 5) {
                             return (
                                 <div key={index}>
-                                    <img src='#' alt='Contact'></img>
-                                    <h4>{todo.project_id}</h4>
-                                    <p><a href={todo.url}>My Todo</a></p>
+                                <a href={todo.url} target="_blank" rel="noopener noreferrer"><h4>{todo.content}</h4></a>
                                 </div>
                             )
                         } else {

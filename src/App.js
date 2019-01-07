@@ -42,13 +42,13 @@ class App extends Component {
           // if (err) {
           //     return "Can't get temperature";
           // }
-          console.log(temp);
+          // console.log(temp);
           this.setState({ temp: temp.main });
       });
   }
 
   render() {
-    console.log(this.state.temp)
+    console.log(this.state.todos)
     return (
       <div className="App">
         <Calendar />
