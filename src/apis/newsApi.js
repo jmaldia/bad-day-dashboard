@@ -10,4 +10,5 @@ export const getNews = () =>
     newsapi.v2.topHeadlines({
         language: 'en',
         country: 'us'
-    }).then(response => response.articles);
+    })
+        .then(response => response.articles);
