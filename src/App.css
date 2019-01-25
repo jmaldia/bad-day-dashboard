@@ -1,5 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   height: 100vh;
   width: 100%;
+}
+
+.Grid-container {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 600px 600px 600px;
 }

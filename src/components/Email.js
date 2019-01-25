@@ -28,7 +28,7 @@ const Email = (props) => {
 
 const styles = {
     container: {
-        width: 600,
+        width: '100%',
         padding: 20,
         margin: 40,
         marginLeft: 'auto',

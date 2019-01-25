@@ -22,7 +22,7 @@ const News = (props) => {
 
 const styles = {
     container: {
-        width: 600,
+        width: '100%',
         padding: 20,
         margin: 40,
         marginLeft: 'auto',
@@ -30,7 +30,8 @@ const styles = {
         borderRadius: 5,
         borderStyle: 'solid',
         borderColor: '#000',
-        borderWidth: 1
+        borderWidth: 1,
+        overflow: 'scroll'
     }
 };
 
