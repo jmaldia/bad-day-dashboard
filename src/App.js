@@ -50,12 +50,14 @@ class App extends Component {
   render() {
     console.log(this.state.news);
     return (
-      <div className="App Grid-container">
-        <Weather temp={this.state.temp}/>
-        <News news={this.state.news} />
-        <Todo todos={this.state.todos} />
-        <Calendar />
-        <Email />
+      <div className="Wrapper">
+        <div className="App Grid-container">
+          <Weather temp={this.state.temp}/>
+          <News news={this.state.news} />
+          <Todo todos={this.state.todos} />
+          <Calendar />
+          <Email />
+        </div>
       </div>
     );
   }

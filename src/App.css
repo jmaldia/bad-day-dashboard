@@ -10,8 +10,19 @@
   width: 100%;
 }
 
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Grid-container {
+  min-width: 900px;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: 350px 350px 350px;
-  grid-template-rows: 600px 600px 600px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: end;
 }
