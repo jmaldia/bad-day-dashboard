@@ -11,6 +11,7 @@
 }
 
 .Wrapper {
+  margin: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +22,7 @@
   max-width: 1200px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto;
+  grid-template-rows: 40% 40%;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   justify-items: end;

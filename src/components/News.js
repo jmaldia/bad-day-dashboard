@@ -24,7 +24,7 @@ const styles = {
     container: {
         width: '100%',
         padding: 20,
-        margin: 40,
+        // margin: 40,
         marginLeft: 'auto',
         marginRight: 'auto',
         borderRadius: 5,
