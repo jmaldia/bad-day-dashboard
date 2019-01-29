@@ -13,8 +13,13 @@
 .Wrapper {
   margin: 40px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.Wrapper h1 {
+  margin: -20px 0 20px 0;
 }
 
 .Grid-container {

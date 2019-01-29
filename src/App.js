@@ -51,6 +51,7 @@ class App extends Component {
     console.log(this.state.news);
     return (
       <div className="Wrapper">
+        <h1>Ten Cadence Dashboard</h1>
         <div className="App Grid-container">
           <Weather temp={this.state.temp}/>
           <News news={this.state.news} />
