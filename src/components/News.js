@@ -30,7 +30,9 @@ const styles = {
         borderRadius: 5,
         borderStyle: 'solid',
         borderColor: '#000',
+        borderColor: '#cecece',
         borderWidth: 1,
+        backgroundColor: '#eee',
         overflow: 'scroll'
     }
 };

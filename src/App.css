@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url('https://static1.squarespace.com/static/56200fcee4b02025054662d7/56201861e4b007035b102ef9/56cb8c63e707ebc39ced7433/1505402390130/chrysler-building-296507.jpeg?format=1000w');
+  background-size: cover;
+}
+
 .App {
   text-align: center;
   height: 100vh;

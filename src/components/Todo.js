@@ -49,8 +49,9 @@ const styles = {
         marginRight: 'auto',
         borderRadius: 5,
         borderStyle: 'solid',
-        borderColor: '#000',
-        borderWidth: 1
+        borderColor: '#cecece',
+        borderWidth: 1,
+        backgroundColor: '#eee'
     }
 };
 
